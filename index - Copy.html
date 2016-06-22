@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="angular-material/angular-material.css">
+<link rel="stylesheet" type="text/css" href="../Simon/style.css">
+<script  type="text/javascript" src="angular-1.5.5/angular.js"></script>
+<script  type="text/javascript" src="angular-1.5.5/angular-animate.js"></script>
+<script  type="text/javascript" src="angular-1.5.5/angular-route.js"></script>
+<script  type="text/javascript" src="angular-1.5.5/angular-aria.js"></script>
+<script  type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+<script  type="text/javascript" src="angular-1.5.5/angular-messages.js"></script>
+<script  type="text/javascript" src="angular-material/angular-material.js"></script>
+<script src="simon.js"></script>
+<title>Simon</title>
+</head>
+
+<body ng-app="appSimon" ng-controller="MainCtrl"  layout="column" layout-align="center center" >
+<div id="fullPannel" class="md-whiteframe-24dp" layout="row" layout-align="center center">
+ <!--div id="CentralPanel" layout="column" layout-align="center center">
+    <label id="GameTitle">Simon</label>
+    <div id="lowerCentralPanel" class="row" layout-align="center end">
+      <div id="buttons" layout="row" layout-align="space-around center" >
+      <div id="counterDisplay" layout="column" layout-align="center center">
+       <label>Count</label>
+        <input id="display" >       
+       </div>
+        <div id="buttonStart" class = "btnPainel" layout="column" layout-align="center center">
+    
+          <label>Start</label>
+          <md-button aria-label="start" class ="md-fab md-mini" id="start"></md-button>
+        </div>
+        <div id="buttonStrict" class = "btnPainel" layout="column" layout-align="center center">
+          <label>Strict</label>
+          <md-button aria-label="strict" class ="md-fab md-mini" id="strict"></md-button>
+        </div>
+      </div>
+      <div id="buttonOn-Off" layout="column" layout-align="center center">
+        <label>Off-On</label>
+        <md-switch ng-model="isOn" aria-label="on-off"></md-switch>
+      </div>
+    </div>
+  </div-->
+  <div id="buttonsLeft" layout ="column">
+    <md-button class="md-icon-button bigButtons" id ="buttonRed" >
+      <md-icon id="iconRed" class="bigIcons" style="fill: red" md-svg-src="partButon.svg" ></md-icon>
+    </md-button>
+    <md-button class="md-icon-button bigButtons" id ="buttonBlue" >
+      <md-icon id="iconBlue" class="bigIcons" style="fill: blue; transform:rotate(-90deg)" md-svg-src="partButon.svg" ></md-icon>
+    </md-button>
+  </div>
+  <div id="buttonsRight" layout ="column">
+    <md-button class="md-icon-button bigButtons"  id ="buttonYellow">
+      <md-icon id="iconYellow" class="bigIcons" style="fill: yellow; transform:rotate(90deg)" md-svg-src="partButon.svg" ></md-icon>
+    </md-button>
+    <md-button class="md-raise bigButtons" id ="buttonGreen">
+    
+    </md-button>
+    <!--md-button class="md-icon-button bigButtons" id ="buttonGreen">
+      <md-icon id="iconGreen" class="bigIcons" style="fill: green; transform:rotate(180deg)" md-svg-src="partButon.svg" ></md-icon>
+    </md-button-->
+  </div>
+</div>
+</body>
+</html>
